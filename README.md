@@ -12,6 +12,7 @@ Proyecto con código de prueba de NET con librerías estándares
 - Patrón Service
 - Migraciones de base de datos
 - Unit of Work
+- Inyección de dependencias
 
 ## Capa de datos
 
@@ -29,12 +30,18 @@ Contiene:
 - Unit of Work.
 - Interfaces e implementaciones de repositorios.
 
+Aquí se generan los archivos de migraciones puesto que puse el DbContext en esta capa.
+
 ## Capa de dominio
 
 - Servicios
 - Automapper
+- DTOs
 
 ## Capa de presentación
 
 - Controladores Rest
 - Validadores
+- Archivo de inicialización y configuración de la aplicación (program.cs)
+
+Se pueden agregar excepciones personalizadas, y mejorar el manejo de control de códigos de respuesta HTTP con decoradores.
